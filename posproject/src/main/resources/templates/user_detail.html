@@ -15,7 +15,7 @@
     <div class="user_screen_container">
         <header>
             <div class="user_screen_head">
-                <span class="user_screen_header"> [사용자] 화면 상세 </span>
+                <span class="user_screen_header"><span th:text="${member.name}"/>님 화면 상세</span>
             </div>
         </header>
         <div class="user_screen_info">
@@ -39,7 +39,6 @@
             </div>
             <div class="side right_info">
                 <div class="screen_view">
-                    <span>화면</span>
                     <form action="/video_feed" method="GET">
                         <div>
                             <img src="http://localhost:9900/video_feed" width="100%" />
